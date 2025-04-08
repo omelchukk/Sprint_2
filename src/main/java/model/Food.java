@@ -1,40 +1,30 @@
 package model;
 
-
 public abstract class Food {
     protected int amount;
     protected double price;
     protected boolean isVegetarian;
 
+    public Food() {
+    }
+
+    public int getAmount() {
+        return this.amount;
+    }
+
     public double getPrice() {
-        return price;
+        return this.price;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public boolean isVegetarian() {
+        return this.isVegetarian;
     }
 
-    public double getAmount() {
-        return amount;
-    }
-}
-
-class Meat extends Food {
-
-    public Meat(int amount, double price) {
-        this.amount = amount;
-        this.price = price;
-        this.isVegetarian = false;
+    public double getDiscount() {
+        return 0;
     }
 }
 
-class Apple extends Food {
-    public Apple(int amount, double price, String colour) {
-        this.amount = amount;
-        this.price = price;
-        this.isVegetarian = true;
-    }
-}
 
 
 
