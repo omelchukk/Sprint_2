@@ -29,7 +29,7 @@ public class ShoppingCart {
             double price = item.getPrice() * item.getAmount();
             double discount = item.getDiscount();
 
-            total += price * (1.0 - discount / 100.0);
+            total = price * (1.0 - discount / 100.0);
         }
 
         return total;
