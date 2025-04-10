@@ -1,5 +1,8 @@
 package model;
 
+import static model.constants.Discount.HAS_DISCOUNT;
+import static model.constants.Discount.NO_DISCOUNT;
+
 public class Apple extends Food implements Discountable {
     private final String colour;
 
@@ -12,10 +15,10 @@ public class Apple extends Food implements Discountable {
 
     @Override
     public double getDiscount() {
-        if ("red".equals(colour)) {
-        return 60.0;
+        if ("red".equals(this.colour)) {
+            return HAS_DISCOUNT;
         } else {
-            return 0.0;
+            return NO_DISCOUNT;
         }
     }
 }

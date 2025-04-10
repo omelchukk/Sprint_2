@@ -21,7 +21,7 @@ public abstract class Food {
     }
 
     public double getDiscount() {
-        return 0;
+        return (double)0.00;
     }
 }
 

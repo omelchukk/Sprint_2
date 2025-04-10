@@ -2,6 +2,6 @@ package model;
 
 public interface Discountable {
     default double getDiscount() {
-        return 0.0;
+        return (double)0.00;
     }
 }

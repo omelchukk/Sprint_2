@@ -1,5 +1,7 @@
 package model;
 
+import static model.constants.Discount.NO_DISCOUNT;
+
 public class Meat extends Food implements Discountable {
     public Meat(int amount, double price) {
         this.amount = amount;
@@ -8,6 +10,6 @@ public class Meat extends Food implements Discountable {
     }
 
     public double getDiscount() {
-        return 0.0;
+        return (NO_DISCOUNT);
     }
 }
